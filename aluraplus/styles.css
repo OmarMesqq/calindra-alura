@@ -25,3 +25,14 @@ body {
     height: 100vh;  /* altura da classe container eh 100% da viewport height do aparelho (vh) - obtida pelas tag meta */
 }
 
+/* block element modifier */
+.container__botao { 
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em; /* Medida relativa: o tamanho da fonte  */
+    color: var(--branco-principal) ;
+    display: block; /* display no seu bloco e não em linha (inline) */
+    text-decoration: none;
+
+}
+
