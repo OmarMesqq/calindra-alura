@@ -3,11 +3,15 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --fonte-principal: "Inter"
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 * {
@@ -19,10 +23,14 @@ body {
     background-image: url("img/Background.png");
     background-size: contain;
     background-repeat: no-repeat;
+    align-items: center; /* alinha os itens no centro das (duas colunas) que definem a pagina */
+    text-align: center; /* alinha todo o texto dentro de elementos de bloco (como a section e a div) no centro */
 }
 
 .container {
     height: 100vh;  /* altura da classe container eh 100% da viewport height do aparelho (vh) - obtida pelas tag meta */
+    display: grid;
+    grid-template-columns: 50% 50% ;
 }
 
 /* block element modifier */
@@ -33,6 +41,51 @@ body {
     color: var(--branco-principal) ;
     display: block; /* display no seu bloco e não em linha (inline) */
     text-decoration: none;
+    margin-bottom: 1em;
 
 }
 
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal); /* 2px de largura e cor branca continua para o contorno (solida) */ 
+    
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* 1em em cima, 0 na direita, 2em embaixo e 0 na esquerda */ 
+}
+
+.container__caixa {
+    margin: 0 6em; /* 0 em cima e embaixo, 6em na direita e esquerda */
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 6em;
+}
+
+.secundario__imagem { 
+    width: 80%; /* design responsivo - garante q imagem n se sobrepoe ao texto - 80% de sua coluna */
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto { 
+    color: var(--cinza-secundario);
+}
