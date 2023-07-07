@@ -23,8 +23,8 @@ body {
     background-image: url("img/Background.png");
     background-size: contain;
     background-repeat: no-repeat;
-    align-items: center; /* alinha os itens no centro das (duas colunas) que definem a pagina */
-    text-align: center; /* alinha todo o texto dentro de elementos de bloco (como a section e a div) no centro */
+    align-items: center; /* alinha os itens no grid*/
+    text-align: center; /* alinha todo o texto inline dentro de elementos de bloco (como a section e a div) no centro */
 }
 
 .container {
@@ -88,4 +88,35 @@ body {
 
 .descricao__texto { 
     color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block; 
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex; /* flexbox bota os filhos do container no padrao "row", formando uma linha */
+    justify-content: center; /* alinha os itens do flex container no meio*/
+    list-style-type: none; /* tira os bullets da lista */
+    margin: 5em 0;  
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal); /* nao precisava, mas atribui cor no titulo e itens (abaixo) p/ caso seja necessario mudar no futuro */
+}
+
+.lista__item { 
+    font-size: 32px;
+    color: var(--branco-principal);
 }
