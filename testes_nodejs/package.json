@@ -4,7 +4,10 @@
   "description": "introduz conceitos de testagem de software com ferramentas do JS",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch --coverage"
+
   },
   "author": "OmarMesqq",
   "license": "GPL-3.0-or-later ",
